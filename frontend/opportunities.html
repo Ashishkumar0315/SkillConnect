@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Opportunities - SkillConnect</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="modern-dashboard">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="dashboard-sidebar">
+
+        <div class="dashboard-logo">
+
+            <div class="dashboard-logo-icon">
+                ✦
+            </div>
+
+            <div>
+                Skill<span>Connect</span>
+            </div>
+
+        </div>
+
+
+        <nav class="dashboard-nav">
+
+            <a href="index.html">
+                <span class="dashboard-nav-icon">⌂</span>
+                <span>Home</span>
+            </a>
+
+            <a href="dashboard.html">
+                <span class="dashboard-nav-icon">▦</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="profile.html">
+                <span class="dashboard-nav-icon">●</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="profile.html#projectsSection">
+                <span class="dashboard-nav-icon">◈</span>
+                <span>Projects</span>
+            </a>
+
+            <a href="profile.html#skillsSection">
+                <span class="dashboard-nav-icon">✧</span>
+                <span>Skills</span>
+            </a>
+
+            <a
+                href="opportunities.html"
+                class="active"
+            >
+                <span class="dashboard-nav-icon">▤</span>
+                <span>Job Board</span>
+            </a>
+
+            <a href="#">
+                <span class="dashboard-nav-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+
+        <div class="dashboard-sidebar-bottom">
+
+            <a href="#" id="logoutButton">
+
+                <span class="dashboard-nav-icon">
+                    ↪
+                </span>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+            <div class="dashboard-sidebar-ai">
+                ✨
+            </div>
+
+            <h3>
+                Build Your Future
+            </h3>
+
+            <p>
+                Develop skills, create projects,
+                and get hired.
+            </p>
+
+            <a href="opportunities.html">
+                Explore Jobs →
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- TOPBAR -->
+
+        <header class="dashboard-topbar">
+
+            <div class="dashboard-search">
+
+                <span>
+                    ⌕
+                </span>
+
+                <input
+                    id="opportunitySearch"
+                    type="text"
+                    placeholder="Search opportunities..."
+                >
+
+            </div>
+
+
+            <div class="dashboard-top-actions">
+
+                <button
+                    type="button"
+                    class="dashboard-notification"
+                    title="Notifications"
+                >
+                    ♧
+                </button>
+
+
+                <div class="dashboard-user-menu">
+
+                    <div class="dashboard-user-avatar">
+
+                        <span id="topUserInitials">
+                            SC
+                        </span>
+
+                    </div>
+
+                    <div class="dashboard-user-name">
+
+                        <strong id="topUserName">
+                            User
+                        </strong>
+
+                        <span>
+                            Student
+                        </span>
+
+                    </div>
+
+                    <span class="dashboard-user-arrow">
+                        ▾
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================================
+             CONTENT
+        ====================================================== -->
+
+        <div class="dashboard-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <section class="dashboard-welcome fade-section">
+
+                <div>
+
+                    <p class="dashboard-eyebrow">
+                        SKILLCONNECT JOB BOARD
+                    </p>
+
+                    <h1>
+                        Find your next
+                        <span>opportunity.</span>
+                    </h1>
+
+                    <p class="dashboard-welcome-text">
+                        Discover freelance projects,
+                        internships and student-friendly roles.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- OPPORTUNITIES -->
+
+            <section class="dashboard-panel fade-section">
+
+                <div class="dashboard-panel-heading">
+
+                    <div>
+
+                        <p class="dashboard-panel-label">
+                            OPPORTUNITIES
+                        </p>
+
+                        <h2>
+                            Available Opportunities
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="opportunityList"
+                    class="dashboard-opportunity-list"
+                >
+
+                    <div class="dashboard-opportunity">
+
+                        <div class="opportunity-icon">
+                            💻
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Frontend Developer Intern
+                            </strong>
+
+                            <span>
+                                Build responsive web interfaces
+                                using HTML, CSS and JavaScript.
+                            </span>
+
+                        </div>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-opportunity">
+
+                        <div class="opportunity-icon">
+                            🚀
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                React Developer
+                            </strong>
+
+                            <span>
+                                Work on modern React applications
+                                and user experiences.
+                            </span>
+
+                        </div>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-opportunity">
+
+                        <div class="opportunity-icon">
+                            🎨
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                UI/UX Design Intern
+                            </strong>
+
+                            <span>
+                                Create clean interfaces and
+                                user-centered product designs.
+                            </span>
+
+                        </div>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-opportunity">
+
+                        <div class="opportunity-icon">
+                            ⚙
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Backend Developer Intern
+                            </strong>
+
+                            <span>
+                                Build APIs and backend systems
+                                using Node.js and databases.
+                            </span>
+
+                        </div>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        const userData =
+            localStorage.getItem("user");
+
+        if (!userData) {
+
+            window.location.href =
+                "login.html";
+
+        } else {
+
+            const user =
+                JSON.parse(userData);
+
+            const topUserName =
+                document.getElementById(
+                    "topUserName"
+                );
+
+            const topUserInitials =
+                document.getElementById(
+                    "topUserInitials"
+                );
+
+            if (topUserName) {
+
+                topUserName.textContent =
+                    user.name || "User";
+
+            }
+
+            if (topUserInitials) {
+
+                const name =
+                    user.name || "SC";
+
+                const initials =
+                    name
+                        .split(" ")
+                        .map(
+                            word =>
+                                word.charAt(0)
+                        )
+                        .join("")
+                        .substring(0, 2)
+                        .toUpperCase();
+
+                topUserInitials.textContent =
+                    initials || "SC";
+
+            }
+
+        }
+
+        // OPPORTUNITY SEARCH
+
+        const opportunitySearch =
+            document.getElementById("opportunitySearch");
+
+        const opportunityList =
+            document.getElementById("opportunityList");
+
+        const opportunityCards =
+            opportunityList
+                ? opportunityList.querySelectorAll(
+                    ".dashboard-opportunity"
+                )
+                : [];
+
+        function filterOpportunities(searchTerm) {
+            let visibleCount = 0;
+
+            opportunityCards.forEach(function(card) {
+                const text =
+                    card.textContent.toLowerCase();
+
+                if (text.includes(searchTerm)) {
+                    card.style.display = "flex";
+                    visibleCount++;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+
+            const existingEmptyState =
+                opportunityList.querySelector(
+                    ".dashboard-empty-state"
+                );
+
+            if (existingEmptyState) {
+                existingEmptyState.remove();
+            }
+
+            if (visibleCount === 0 && searchTerm) {
+                const emptyState =
+                    document.createElement("div");
+
+                emptyState.className =
+                    "dashboard-empty-state";
+
+                emptyState.innerHTML = `
+                    <div>⌕</div>
+                    <h3>No opportunities found</h3>
+                    <p>
+                        Try searching for another job,
+                        skill, or role.
+                    </p>
+                `;
+
+                opportunityList.appendChild(emptyState);
+            }
+        }
+
+        if (opportunitySearch) {
+            opportunitySearch.addEventListener(
+                "input",
+                function() {
+                    const searchTerm =
+                        opportunitySearch.value
+                            .trim()
+                            .toLowerCase();
+
+                    filterOpportunities(searchTerm);
+                }
+            );
+
+            const urlParams =
+                new URLSearchParams(
+                    window.location.search
+                );
+
+            const searchFromUrl =
+                urlParams.get("search");
+
+            if (searchFromUrl) {
+                opportunitySearch.value =
+                    searchFromUrl;
+
+                filterOpportunities(
+                    searchFromUrl.toLowerCase()
+                );
+            }
+        }
+        // LOGOUT
+
+        const logoutButton =
+            document.getElementById(
+                "logoutButton"
+            );
+
+        if (logoutButton) {
+
+            logoutButton.addEventListener(
+                "click",
+                function(event) {
+
+                    event.preventDefault();
+
+                    localStorage.removeItem(
+                        "user"
+                    );
+
+                    window.location.href =
+                        "login.html";
+
+                }
+            );
+
+        }
+
+
+        // FADE ON SCROLL
+
+        const fadeSections =
+            document.querySelectorAll(
+                ".fade-section"
+            );
+
+        const fadeObserver =
+            new IntersectionObserver(
+                function(entries) {
+
+                    entries.forEach(
+                        function(entry) {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target.classList.add(
+                                    "fade-visible"
+                                );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        fadeSections.forEach(
+            function(section) {
+
+                fadeObserver.observe(
+                    section
+                );
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

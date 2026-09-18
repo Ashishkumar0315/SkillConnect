@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account - SkillConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            SkillConnect
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="opportunities.html">
+                Opportunities
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="register.html"
+               class="nav-button">
+                Register
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Registration -->
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+            <div class="auth-header">
+
+                <h1>Create Your Account</h1>
+
+                <p>
+                    Join SkillConnect and showcase your skills.
+                </p>
+
+            </div>
+
+
+            <form id="registerForm">
+
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="role">
+                        I am a
+                    </label>
+
+                    <select id="role" required>
+
+                        <option value="">
+                            Select your role
+                        </option>
+
+                        <option value="student">
+                            Student
+                        </option>
+
+                        <option value="client">
+                            Client
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-button">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+
+            <p class="auth-footer">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>

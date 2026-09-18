@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Profile - SkillConnect</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="profile-dashboard">
+
+
+    <!-- =====================================================
+         LEFT SIDEBAR
+    ====================================================== -->
+
+    <aside class="profile-sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="sidebar-logo">
+
+            <div class="sidebar-logo-icon">
+                ✦
+            </div>
+
+            <span>
+                Skill<span>Connect</span>
+            </span>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <a href="index.html">
+
+                <span class="sidebar-nav-icon">
+                    ⌂
+                </span>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+
+            <a
+                href="profile.html"
+                class="active"
+            >
+
+                <span class="sidebar-nav-icon">
+                    ●
+                </span>
+
+                <span>
+                    Profile
+                </span>
+
+            </a>
+
+
+            <a href="#projectsSection">
+
+                <span class="sidebar-nav-icon">
+                    ▣
+                </span>
+
+                <span>
+                    Projects
+                </span>
+
+            </a>
+
+
+            <a href="#skillsSection">
+
+                <span class="sidebar-nav-icon">
+                    ✧
+                </span>
+
+                <span>
+                    Skills
+                </span>
+
+            </a>
+
+
+            <a href="opportunities.html">
+
+                <span class="sidebar-nav-icon">
+                    ▤
+                </span>
+
+                <span>
+                    Job Board
+                </span>
+
+            </a>
+
+
+            <a href="#">
+
+                <span class="sidebar-nav-icon">
+                    ⚙
+                </span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+
+        <!-- SIDEBAR BOTTOM CARD -->
+
+        <div class="sidebar-bottom-card">
+
+            <div class="sidebar-ai-icon">
+                ✨
+            </div>
+
+            <h3>
+                Build Your Future
+            </h3>
+
+            <p>
+                Develop skills, create projects,
+                and get hired.
+            </p>
+
+            <a href="opportunities.html">
+                Explore Jobs
+            </a>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN APPLICATION AREA
+    ====================================================== -->
+
+    <main class="profile-main">
+
+
+        <!-- =================================================
+             TOP BAR
+        ================================================== -->
+
+        <header class="profile-topbar">
+
+
+            <!-- SEARCH -->
+
+            <div class="profile-search">
+
+                <span>
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Search for jobs, skills, or projects..."
+                >
+
+            </div>
+
+
+
+            <!-- TOP ACTIONS -->
+
+            <div class="profile-top-actions">
+
+
+                <button
+                    type="button"
+                    class="notification-button"
+                    title="Notifications"
+                >
+                    ♧
+                </button>
+
+
+                <div class="top-user">
+
+                    <div class="top-user-avatar">
+                        SC
+                    </div>
+
+                    <span>
+                        ▾
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================================
+             PROFILE PAGE CONTENT
+        ================================================== -->
+
+        <div class="profile-content">
+
+
+            <!-- =================================================
+                 PAGE HEADER
+            ================================================== -->
+
+            <div class="profile-page-heading">
+
+
+                <div>
+
+                    <p class="profile-eyebrow">
+                        MY PROFILE
+                    </p>
+
+                    <h1>
+                        Build your professional identity
+                    </h1>
+
+                    <p>
+                        Showcase your skills, experience and
+                        projects to clients and recruiters.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    form="profileForm"
+                    class="profile-save-button"
+                >
+                    ✓ Save Profile
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROFILE FORM
+            ================================================== -->
+
+            <form id="profileForm">
+
+
+
+                <!-- =================================================
+                     PROFILE HERO
+                ================================================== -->
+
+                <section class="profile-hero-card">
+
+
+                    <!-- PROFILE PHOTO -->
+
+                    <div class="profile-photo-section">
+
+
+                        <div
+                            class="profile-photo"
+                            id="profilePhotoPreview"
+                        >
+                            SC
+                        </div>
+
+
+                        <label
+                            for="profilePhoto"
+                            class="photo-upload-button"
+                        >
+                            📷 Upload Photo
+                        </label>
+
+
+                        <input
+                            type="file"
+                            id="profilePhoto"
+                            accept="image/png,image/jpeg,image/webp"
+                            hidden
+                        >
+
+
+                        <p>
+                            JPG, PNG or WEBP
+                        </p>
+
+
+                    </div>
+
+
+
+                    <!-- PROFILE INFORMATION -->
+
+                    <div class="profile-basic-info">
+
+
+                        <div class="profile-name-row">
+
+
+                            <div>
+
+                                <h2>
+                                    Your Professional Profile
+                                </h2>
+
+                                <span class="profile-role-badge">
+                                    Student
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="profile-basic-fields">
+
+
+                            <!-- HEADLINE -->
+
+                            <div class="profile-field">
+
+                                <label for="headline">
+                                    Professional Headline
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="headline"
+                                    placeholder="e.g. Full Stack Developer"
+                                    required
+                                >
+
+                            </div>
+
+
+
+                            <!-- LOCATION -->
+
+                            <div class="profile-field">
+
+                                <label for="location">
+                                    Location
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="location"
+                                    placeholder="e.g. Delhi, India"
+                                >
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     ABOUT + EDUCATION
+                ================================================== -->
+
+                <div class="profile-grid-2">
+
+
+                    <!-- ABOUT -->
+
+                    <section class="profile-section-card">
+
+
+                        <div class="profile-card-heading">
+
+
+                            <div class="section-icon blue">
+                                ✦
+                            </div>
+
+
+                            <div>
+
+                                <h2>
+                                    About You
+                                </h2>
+
+                                <p>
+                                    Tell people about your background
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <textarea
+                            id="bio"
+                            placeholder="Tell clients about yourself..."
+                            rows="7"
+                            required
+                        ></textarea>
+
+
+                    </section>
+
+
+
+                    <!-- EDUCATION -->
+
+                    <section class="profile-section-card">
+
+
+                        <div class="profile-card-heading">
+
+
+                            <div class="section-icon purple">
+                                🎓
+                            </div>
+
+
+                            <div>
+
+                                <h2>
+                                    Education
+                                </h2>
+
+                                <p>
+                                    Your academic background
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <input
+                            type="text"
+                            id="education"
+                            placeholder="e.g. B.Tech Computer Science"
+                            required
+                        >
+
+
+                    </section>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PROFESSIONAL LINKS
+                ================================================== -->
+
+                <section class="profile-section-card">
+
+
+                    <div class="profile-card-heading">
+
+
+                        <div class="section-icon dark">
+                            🔗
+                        </div>
+
+
+                        <div>
+
+                            <h2>
+                                Professional Links
+                            </h2>
+
+                            <p>
+                                Connect your professional profiles
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="profile-grid-2">
+
+
+                        <!-- GITHUB -->
+
+                        <div class="profile-field">
+
+                            <label for="github">
+                                GitHub Profile
+                            </label>
+
+                            <input
+                                type="url"
+                                id="github"
+                                placeholder="https://github.com/username"
+                            >
+
+                        </div>
+
+
+
+                        <!-- LINKEDIN -->
+
+                        <div class="profile-field">
+
+                            <label for="linkedin">
+                                LinkedIn Profile
+                            </label>
+
+                            <input
+                                type="url"
+                                id="linkedin"
+                                placeholder="https://linkedin.com/in/username"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     SKILLS
+                ================================================== -->
+
+                <section
+                    class="profile-section-card"
+                    id="skillsSection"
+                >
+
+
+                    <div class="profile-card-heading">
+
+
+                        <div class="section-icon green">
+                            ✧
+                        </div>
+
+
+                        <div>
+
+                            <h2>
+                                Skills
+                            </h2>
+
+                            <p>
+                                Highlight your technical abilities
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- ADD SKILL -->
+
+                    <div class="skill-input-modern">
+
+
+                        <input
+                            type="text"
+                            id="skill"
+                            placeholder="e.g. JavaScript"
+                        >
+
+
+                        <button
+                            type="button"
+                            id="addSkillButton"
+                        >
+                            + Add Skill
+                        </button>
+
+
+                    </div>
+
+
+
+                    <!-- SKILL TAGS -->
+
+                    <div
+                        id="skillsList"
+                        class="skills-list"
+                    ></div>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     ADD PROJECT
+                ================================================== -->
+
+                <section class="profile-section-card">
+
+
+                    <div class="profile-card-heading">
+
+
+                        <div class="section-icon orange">
+                            ◈
+                        </div>
+
+
+                        <div>
+
+                            <h2>
+                                Add New Project
+                            </h2>
+
+                            <p>
+                                Showcase your best work
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- PROJECT TITLE + TECHNOLOGIES -->
+
+                    <div class="profile-grid-2">
+
+
+                        <div class="profile-field">
+
+                            <label for="projectTitle">
+                                Project Title
+                            </label>
+
+                            <input
+                                type="text"
+                                id="projectTitle"
+                                placeholder="e.g. SkillConnect"
+                            >
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label for="projectTechnologies">
+                                Technologies Used
+                            </label>
+
+                            <input
+                                type="text"
+                                id="projectTechnologies"
+                                placeholder="HTML, CSS, JavaScript, Node.js"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- PROJECT DESCRIPTION -->
+
+                    <div class="profile-field">
+
+                        <label for="projectDescription">
+                            Project Description
+                        </label>
+
+                        <textarea
+                            id="projectDescription"
+                            placeholder="Describe your project..."
+                            rows="5"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- PROJECT URLS -->
+
+                    <div class="profile-grid-2">
+
+
+                        <div class="profile-field">
+
+                            <label for="projectUrl">
+                                Live Project URL
+                            </label>
+
+                            <input
+                                type="url"
+                                id="projectUrl"
+                                placeholder="https://yourproject.com"
+                            >
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label for="projectGithub">
+                                GitHub URL
+                            </label>
+
+                            <input
+                                type="url"
+                                id="projectGithub"
+                                placeholder="https://github.com/username/project"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     SAVED PROJECTS
+                ================================================== -->
+
+                <section
+                    class="saved-projects-section"
+                    id="projectsSection"
+                >
+
+
+                    <div class="saved-projects-heading">
+
+
+                        <div>
+
+                            <p class="profile-eyebrow">
+                                PORTFOLIO
+                            </p>
+
+                            <h2>
+                                Saved Projects
+                            </h2>
+
+                            <p>
+                                Your uploaded projects and their details
+                            </p>
+
+                        </div>
+
+
+                        <span class="project-count-badge">
+                            Your Projects
+                        </span>
+
+
+                    </div>
+
+
+
+                    <!-- JAVASCRIPT WILL INSERT PROJECTS HERE -->
+
+                    <div id="projectsList"></div>
+
+
+                </section>
+
+
+
+            </form>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         AI PROJECT ANALYSIS DRAWER
+    ====================================================== -->
+
+    <div
+        id="aiDrawerOverlay"
+        class="ai-drawer-overlay"
+    >
+
+
+        <div
+            id="aiDrawer"
+            class="ai-drawer"
+        >
+
+
+            <!-- =================================================
+                 AI HEADER
+            ================================================== -->
+
+            <div class="ai-drawer-header">
+
+
+                <div class="ai-title-area">
+
+
+                    <div class="ai-icon">
+                        ✦
+                    </div>
+
+
+                    <div>
+
+                        <h2>
+                            SkillConnect AI
+                        </h2>
+
+                        <p>
+                            Portfolio Intelligence
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <button
+                    type="button"
+                    id="closeAiDrawer"
+                    class="ai-close-button"
+                >
+                    ×
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AI STATUS
+            ================================================== -->
+
+            <div class="ai-status">
+
+
+                <span class="ai-status-dot"></span>
+
+
+                <span>
+                    AI Career Advisor
+                </span>
+
+
+                <span class="ai-status-live">
+                    LIVE
+                </span>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROJECT BEING ANALYZED
+            ================================================== -->
+
+            <div class="ai-project-header">
+
+
+                <div class="ai-project-icon">
+                    ◈
+                </div>
+
+
+                <div>
+
+                    <h3 id="aiProjectTitle">
+                        Project Analysis
+                    </h3>
+
+                    <p id="aiProjectTechnologies">
+                        Project technologies
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AI RESULT
+            ================================================== -->
+
+            <div class="ai-result">
+
+
+                <div class="ai-result-header">
+
+
+                    <div>
+
+                        <span class="ai-small-label">
+                            AI INSIGHTS
+                        </span>
+
+                        <h3>
+                            ✨ Project Analysis
+                        </h3>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     LOADING SCREEN
+                ================================================== -->
+
+                <div
+                    id="aiAnalysisContent"
+                    class="ai-analysis-content"
+                >
+
+
+                <div class="ai-loading">
+
+                    <div class="ai-loading-icon">
+                        ✦
+                    </div>
+
+                    <div class="ai-loading-text">
+
+                        <h3>
+                            Analyzing your project...
+                        </h3>
+
+                        <p>
+                            SkillConnect AI is reviewing your
+                            project, technologies and portfolio
+                            potential.
+                        </p>
+
+                    </div>
+
+                    <div class="ai-loading-dots">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AI FOOTER
+            ================================================== -->
+
+            <div class="ai-drawer-footer">
+
+
+                <span>
+                    ✨
+                </span>
+
+
+                <span>
+                    Keep building. Keep improving.
+                </span>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PROFILE JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/profile.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard - SkillConnect</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="modern-dashboard">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="dashboard-sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="dashboard-logo">
+
+            <div class="dashboard-logo-icon">
+                ✦
+            </div>
+
+            <div>
+                Skill<span>Connect</span>
+            </div>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="dashboard-nav">
+            <a href="index.html">
+
+                <span class="dashboard-nav-icon">
+                    ⌂
+                </span>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+            <a
+                href="dashboard.html"
+                class="active"
+            >
+                <span class="dashboard-nav-icon">
+                    ▦
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+            </a>
+            
+
+            <a href="profile.html">
+
+                <span class="dashboard-nav-icon">
+                    ●
+                </span>
+
+                <span>
+                    My Profile
+                </span>
+
+            </a>
+
+
+            <a href="profile.html#projectsSection">
+
+                <span class="dashboard-nav-icon">
+                    ◈
+                </span>
+
+                <span>
+                    Projects
+                </span>
+
+            </a>
+
+
+            <a href="profile.html#skillsSection">
+
+                <span class="dashboard-nav-icon">
+                    ✧
+                </span>
+
+                <span>
+                    Skills
+                </span>
+
+            </a>
+
+
+            <a href="opportunities.html">
+
+                <span class="dashboard-nav-icon">
+                    ▤
+                </span>
+
+                <span>
+                    Job Board
+                </span>
+
+            </a>
+
+
+            <a href="#">
+
+                <span class="dashboard-nav-icon">
+                    ⚙
+                </span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+        </nav>
+
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="dashboard-sidebar-bottom">
+            <a href="#" id="logoutButton">
+                <span class="dashboard-nav-icon">
+                    ↪
+                </span>
+
+                <span>
+                    Logout
+                </span>
+            </a>
+
+            <div class="dashboard-sidebar-ai">
+                ✨
+            </div>
+
+            <h3>
+                Build Your Future
+            </h3>
+
+            <p>
+                Develop skills, create projects,
+                and get hired.
+            </p>
+
+            <a href="opportunities.html">
+                Explore Jobs →
+            </a>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN AREA
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =================================================
+             TOP BAR
+        ================================================== -->
+
+        <header class="dashboard-topbar">
+
+
+            <!-- SEARCH -->
+
+            <div class="dashboard-search">
+
+                <span>
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Search for jobs, skills, or projects..."
+                >
+
+            </div>
+
+
+
+            <!-- TOP RIGHT -->
+
+            <div class="dashboard-top-actions">
+
+
+                <button
+                    type="button"
+                    class="dashboard-notification"
+                    title="Notifications"
+                >
+                    ♧
+                </button>
+
+
+                <div class="dashboard-user-menu">
+
+                    <div class="dashboard-user-avatar">
+                        <span id="topUserInitials">
+                            SC
+                        </span>
+                    </div>
+
+                    <div class="dashboard-user-name">
+
+                        <strong id="topUserName">
+                            User
+                        </strong>
+
+                        <span>
+                            Student
+                        </span>
+
+                    </div>
+
+                    <span class="dashboard-user-arrow">
+                        ▾
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <div class="dashboard-content">
+
+
+            <!-- =================================================
+                 WELCOME SECTION
+            ================================================== -->
+
+            <section class="dashboard-welcome fade-section">
+
+
+                <div>
+
+                    <p class="dashboard-eyebrow">
+                        STUDENT DASHBOARD
+                    </p>
+
+                    <h1>
+                        Welcome,
+                        <span id="userName"></span>
+                        👋
+                    </h1>
+
+                    <p class="dashboard-welcome-text">
+                        Here's what's happening with your
+                        SkillConnect career journey.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="profile.html"
+                    class="dashboard-primary-button"
+                >
+                    ✦ Complete Profile →
+                </a>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 STATISTICS
+            ================================================== -->
+
+            <section class="dashboard-stats fade-section">
+
+
+                <!-- PROJECTS -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="dashboard-stat-icon blue">
+                        ◈
+                    </div>
+
+                    <div class="dashboard-stat-info">
+
+                        <span>
+                            Projects
+                        </span>
+
+                        <strong id="projectCount">
+                            0
+                        </strong>
+
+                        <small>
+                            Your portfolio
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SKILLS -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="dashboard-stat-icon purple">
+                        ✧
+                    </div>
+
+                    <div class="dashboard-stat-info">
+
+                        <span>
+                            Skills
+                        </span>
+
+                        <strong id="skillCount">
+                            0
+                        </strong>
+
+                        <small>
+                            Skills added
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PROFILE -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="dashboard-stat-icon green">
+                        ✓
+                    </div>
+
+                    <div class="dashboard-stat-info">
+
+                        <span>
+                            Profile
+                        </span>
+
+                        <strong id="profileProgress">
+                            0%
+                        </strong>
+
+                        <small>
+                            Profile completion
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- OPPORTUNITIES -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="dashboard-stat-icon orange">
+                        ▤
+                    </div>
+
+                    <div class="dashboard-stat-info">
+
+                        <span>
+                            Opportunities
+                        </span>
+
+                        <strong>
+                            Explore
+                        </strong>
+
+                        <small>
+                            Find your next role
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 MAIN GRID
+            ================================================== -->
+
+            <section class="dashboard-main-grid fade-section">
+
+
+                <!-- =================================================
+                     PROFILE PROGRESS
+                ================================================== -->
+
+                <div class="dashboard-panel profile-progress-panel">
+
+
+                    <div class="dashboard-panel-heading">
+
+                        <div>
+
+                            <p class="dashboard-panel-label">
+                                PROFILE
+                            </p>
+
+                            <h2>
+                                Profile Progress
+                            </h2>
+
+                        </div>
+
+                        <span id="profileProgressBadge">
+                            0%
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="dashboard-progress-area">
+
+                        <div class="dashboard-progress-top">
+
+                            <span>
+                                Complete your professional profile
+                            </span>
+
+                            <strong id="profileProgressText">
+                                0%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="dashboard-progress-bar">
+
+                            <div
+                                id="profileProgressBar"
+                                class="dashboard-progress-fill"
+                                style="width: 0%;"
+                            ></div>
+
+                        </div>
+
+
+                        <p>
+                            Add your skills, education, bio and
+                            professional links to make your profile
+                            more attractive to recruiters.
+                        </p>
+
+
+                        <a
+                            href="profile.html"
+                            class="dashboard-panel-button"
+                        >
+                            Complete Profile →
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     QUICK ACTIONS
+                ================================================== -->
+
+                <div class="dashboard-panel quick-actions-panel">
+
+
+                    <div class="dashboard-panel-heading">
+
+                        <div>
+
+                            <p class="dashboard-panel-label">
+                                SHORTCUTS
+                            </p>
+
+                            <h2>
+                                Quick Actions
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="dashboard-quick-actions">
+
+
+                        <a
+                            href="profile.html"
+                            class="quick-action"
+                        >
+
+                            <span class="quick-action-icon blue">
+                                +
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Add Project
+                                </strong>
+
+                                <small>
+                                    Showcase your work
+                                </small>
+
+                            </div>
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+
+
+                        <a
+                            href="profile.html#skillsSection"
+                            class="quick-action"
+                        >
+
+                            <span class="quick-action-icon purple">
+                                +
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Add Skill
+                                </strong>
+
+                                <small>
+                                    Grow your skill set
+                                </small>
+
+                            </div>
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+
+
+                        <a
+                            href="opportunities.html"
+                            class="quick-action"
+                        >
+
+                            <span class="quick-action-icon orange">
+                                ✦
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Find Opportunities
+                                </strong>
+
+                                <small>
+                                    Explore new jobs
+                                </small>
+
+                            </div>
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ACCOUNT OVERVIEW
+            ================================================== -->
+
+            <section class="dashboard-panel account-panel fade-section">
+
+
+                <div class="dashboard-panel-heading">
+
+
+                    <div>
+
+                        <p class="dashboard-panel-label">
+                            ACCOUNT
+                        </p>
+
+                        <h2>
+                            Your Account
+                        </h2>
+
+                        <p>
+                            Your current SkillConnect account information.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="profile.html"
+                        class="dashboard-small-button"
+                    >
+                        Edit Profile
+                    </a>
+
+
+                </div>
+
+
+
+                <div class="account-grid">
+
+
+                    <div class="account-item">
+
+                        <span>
+                            NAME
+                        </span>
+
+                        <strong id="userNameCard">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="account-item">
+
+                        <span>
+                            EMAIL
+                        </span>
+
+                        <strong id="userEmail">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="account-item">
+
+                        <span>
+                            ROLE
+                        </span>
+
+                        <strong id="userRole">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PROJECTS + OPPORTUNITIES
+            ================================================== -->
+
+            <section class="dashboard-bottom-grid fade-section">
+
+
+                <!-- PROJECTS -->
+
+                <div class="dashboard-panel">
+
+
+                    <div class="dashboard-panel-heading">
+
+                        <div>
+
+                            <p class="dashboard-panel-label">
+                                PORTFOLIO
+                            </p>
+
+                            <h2>
+                                Your Projects
+                            </h2>
+
+                        </div>
+
+                        <a
+                            href="profile.html#projectsSection"
+                            class="dashboard-view-link"
+                        >
+                            View All →
+                        </a>
+
+                    </div>
+
+
+
+                    <div
+                        id="dashboardProjects"
+                        class="dashboard-project-list"
+                    >
+
+                        <div class="dashboard-empty-state">
+
+                            <div>
+                                ◈
+                            </div>
+
+                            <h3>
+                                Build your portfolio
+                            </h3>
+
+                            <p>
+                                Add your first project to
+                                showcase your skills.
+                            </p>
+
+                            <a href="profile.html">
+                                Add Project →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- OPPORTUNITIES -->
+
+                <div class="dashboard-panel">
+
+
+                    <div class="dashboard-panel-heading">
+
+                        <div>
+
+                            <p class="dashboard-panel-label">
+                                CAREER
+                            </p>
+
+                            <h2>
+                                Opportunities
+                            </h2>
+
+                        </div>
+
+                        <a
+                            href="opportunities.html"
+                            class="dashboard-view-link"
+                        >
+                            View Jobs →
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="dashboard-opportunity-list">
+
+
+                        <a
+                            href="opportunities.html"
+                            class="dashboard-opportunity"
+                        >
+
+                            <div class="opportunity-icon">
+                                💼
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Find freelance opportunities
+                                </strong>
+
+                                <span>
+                                    Discover projects that match
+                                    your skills.
+                                </span>
+
+                            </div>
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+
+
+                        <a
+                            href="opportunities.html"
+                            class="dashboard-opportunity"
+                        >
+
+                            <div class="opportunity-icon">
+                                🚀
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Explore career opportunities
+                                </strong>
+
+                                <span>
+                                    Find internships and student roles.
+                                </span>
+
+                            </div>
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+
+
+                        <a
+                            href="opportunities.html"
+                            class="dashboard-opportunity"
+                        >
+
+                            <div class="opportunity-icon">
+                                ✦
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Grow your career
+                                </strong>
+
+                                <span>
+                                    Keep building skills and projects.
+                                </span>
+
+                            </div>
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 BOTTOM CTA
+            ================================================== -->
+
+            <section class="dashboard-career-banner fade-section">
+
+
+                <div class="career-banner-icon">
+                    ✨
+                </div>
+
+
+                <div>
+
+                    <p>
+                        YOUR NEXT OPPORTUNITY STARTS HERE
+                    </p>
+
+                    <h2>
+                        Build skills. Create projects.
+                        Get discovered.
+                    </h2>
+
+                    <span>
+                        Keep improving your profile and
+                        showcase what you can do.
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="opportunities.html"
+                    class="career-banner-button"
+                >
+                    Explore Opportunities →
+                </a>
+
+
+            </section>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         DASHBOARD JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/dashboard.js"></script>
+
+
+</body>
+
+</html>
