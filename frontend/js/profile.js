@@ -216,7 +216,7 @@ if (!userData) {
         try {
 
             const response = await fetch(
-                `http://localhost:5000/api/profile/${user.id}`
+                `https://skillconnect-production-469d.up.railway.app/api/profile/${user.id}`
             );
 
 
@@ -292,7 +292,7 @@ if (!userData) {
         try {
 
             const response = await fetch(
-                `http://localhost:5000/api/skills/${user.id}`
+                `https://skillconnect-production-469d.up.railway.app/api/skills/${user.id}`
             );
 
 
@@ -353,7 +353,7 @@ if (!userData) {
         try {
 
             const response = await fetch(
-                `http://localhost:5000/api/projects/${user.id}`
+                `https://skillconnect-production-469d.up.railway.app/api/projects/${user.id}`
             );
 
 
@@ -513,7 +513,7 @@ if (!userData) {
         try {
 
             const response = await fetch(
-                `http://localhost:5000/api/projects/${projectId}`,
+                `https://skillconnect-production-469d.up.railway.app/api/projects/${projectId}`,
                 {
                     method: "DELETE"
                 }
@@ -1415,7 +1415,7 @@ if (!userData) {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/ai/analyze-project",
+                    "https://skillconnect-production-469d.up.railway.app/api/ai/analyze-project",
                     {
                         method: "POST",
 
@@ -1702,7 +1702,7 @@ if (!userData) {
 
                 const response =
                     await fetch(
-                        "http://localhost:5000/api/profile",
+                        "https://skillconnect-production-469d.up.railway.app/api/profile",
                         {
                             method: "POST",
 
@@ -1765,7 +1765,7 @@ if (!userData) {
 
                 const skillResponse =
                     await fetch(
-                        "http://localhost:5000/api/skills",
+                        "https://skillconnect-production-469d.up.railway.app/api/skills",
                         {
                             method: "POST",
 
@@ -1819,7 +1819,7 @@ if (!userData) {
 
                 const projectResponse =
                     await fetch(
-                        "http://localhost:5000/api/projects",
+                        "https://skillconnect-production-469d.up.railway.app/api/projects",
                         {
                             method: "POST",
 

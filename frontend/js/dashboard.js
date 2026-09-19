@@ -107,7 +107,7 @@ async function loadDashboardData(userId) {
 
         const profileResponse =
             await fetch(
-                `http://localhost:5000/api/profile/${userId}`
+                `https://skillconnect-production-469d.up.railway.app/api/profile/${userId}`
             );
 
 
@@ -128,7 +128,7 @@ async function loadDashboardData(userId) {
 
         const skillsResponse =
             await fetch(
-                `http://localhost:5000/api/skills/${userId}`
+                `https://skillconnect-production-469d.up.railway.app/api/skills/${userId}`
             );
 
 
@@ -149,7 +149,7 @@ async function loadDashboardData(userId) {
 
         const projectsResponse =
             await fetch(
-                `http://localhost:5000/api/projects/${userId}`
+                `https://skillconnect-production-469d.up.railway.app/api/projects/${userId}`
             );
 
 

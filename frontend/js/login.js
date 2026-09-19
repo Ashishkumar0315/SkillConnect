@@ -10,7 +10,7 @@ loginForm.addEventListener("submit", async function(event) {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/login",
+            "https://skillconnect-production-469d.up.railway.app/api/login",
             {
                 method: "POST",
 
